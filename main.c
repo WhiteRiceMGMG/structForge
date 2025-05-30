@@ -15,6 +15,13 @@
 
  int main(void) {
     int command = 0;
+    printf("コマンド一覧\n");
+    printf("-------------------\n");
+    printf("1:ユーザーの追加\n");
+    printf("2:ユーザーの削除\n");
+    printf("3:ユーザーの検索\n");
+    printf("4:ユーザーの一覧表示\n");
+    printf("-------------------\n");
     printf("コマンドを入力してください：");
     scanf("%d",&command);
     hundole_command(command);
