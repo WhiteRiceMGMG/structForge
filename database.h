@@ -35,11 +35,9 @@ void add_user(Database* db);
 
 void delete_user(Database* db);
 
-Database* search_user(Database* db);
+void search_user(const Database* db);
 
 void print_user_list(const Database* db);
-
-void print_user(const Database* db);
 
 #endif
 

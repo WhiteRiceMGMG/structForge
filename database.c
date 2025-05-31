@@ -13,6 +13,7 @@
  * Revision History:
  * 　　　　　　　　　　　2025/5/24:ファイル作成開始
  * 　　　　　　　　　　　2025/5/31:add_user関数の返り値をvoid型に
+ *                   2025/5/31:すべての関数を定義
  *****************************************************************/
 
 #include <stdio.h>
@@ -33,9 +34,6 @@ int hundole_command(int command) {
             break;
         case 4:
             print_user_list(&db);
-            break;
-        case 5:
-            print_user(&db);
             break;
         default:
             printf("不正なコマンドです．");
@@ -87,15 +85,28 @@ void delete_user(Database* db) {
     db->userCount--;
 }
 
-Database* search_user(Database* db) {
+void search_user(const Database* db) {
+    int index = db->userCount-1;
+    printf("INPUT ID YOU WANNA WANT\n");
+    scanf("%d",&index);
+    printf("USER NAME:%s\n",db->userName[index]);
+    printf("USER JOB:%s\n",db->userJob[index]);
+    printf("USER BORN:%s\n",db->userBorn[index]);
+    printf("USER AGE:%d\n",db->userAge[index]);
 
 }
 
 void print_user_list(const Database* db){
-
-}
-
-void print_user(const Database* db) {
-    
+    int index = db->userCount-1;
+    int i = 0;
+    printf("SHOW ALL DATA\n");
+    for(i = 0; i < index; i++) {
+        printf("USER ID:%d\n",db->userId[i]);
+        printf("USER NAME:%s\n",db->userName[i]);
+        printf("USER JOB:%s\n",db->userJob[i]);
+        printf("USER BORN:%s\n",db->userBorn[i]);
+        printf("USER AGE:%d\n",db->userAge[i]);
+    }
+ 
 }
 
