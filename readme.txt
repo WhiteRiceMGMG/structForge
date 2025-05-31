@@ -3,6 +3,7 @@
 
 ユーザーidを入力したら+1するようにする
 
+追記　by VGN-TYPEG
 
 kiritanpotsu@MacBookPro structForge % ./maim.out
 -------------------
