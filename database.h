@@ -33,7 +33,7 @@ int hundole_command(int command);
 
 void add_user(Database* db);
 
-Database* delete_user(Database* db);
+void delete_user(Database* db);
 
 Database* search_user(Database* db);
 

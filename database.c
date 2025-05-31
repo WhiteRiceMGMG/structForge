@@ -66,7 +66,7 @@ void add_user(Database* db) {
     db->userCount++;
 }
 
-Database* delete_user(Database* db) {
+void delete_user(Database* db) {
     int index = 0;
     int deleteIndex = 0;
     int i = 0;
@@ -77,10 +77,14 @@ Database* delete_user(Database* db) {
         printf("THE INDEX IS NOT EXIST...");
     }
     //1,2,3,4,0,6,7,8みたいになる.0のところはindex．i=indexからuserCount-1まで．
-    for()
-
-
-
+    for(i = index; i <= db->userCount-1 ;i++){
+        db->userId[i] = db->userId[i + 1];
+        strcpy(db->userName[i], db->userName[i + 1]);
+        strcpy(db->userJob[i], db->userJob[i + 1]);
+        strcpy(db->userBorn[i], db->userBorn[i + 1]);
+        db->userAge[i] = db->userAge[i + 1];
+    }
+    db->userCount--;
 }
 
 Database* search_user(Database* db) {
