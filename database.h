@@ -29,7 +29,7 @@ typedef struct {
     int userCount;
 } Database;
 
-int hundole_command(int command);
+void hundole_command(int command);
 
 void add_user(Database* db);
 

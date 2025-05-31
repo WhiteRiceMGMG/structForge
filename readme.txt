@@ -1,6 +1,37 @@
 ! 自分のメモ用です．
+いい感じ！！！！！！！！！！！！！
 
-
+kiritanpotsu@MacBookPro structForge % ./maim.out
+-------------------
+コマンド一覧
+  1:ユーザーの追加
+  2:ユーザーの削除
+  3:ユーザーの検索
+  4:ユーザーの一覧表示
+-------------------
+>コマンドを入力してください：1
+INPUT YOUR NAME:
+ogawa
+INPUT YOUR JOB:
+ph.D
+INPUT YOUR BORN:
+ehime
+INPUT YOUR AGE:
+99
+-------------------
+コマンド一覧
+  1:ユーザーの追加
+  2:ユーザーの削除
+  3:ユーザーの検索
+  4:ユーザーの一覧表示
+-------------------
+>コマンドを入力してください：3
+INPUT ID YOU WANNA WANT
+0
+USER NAME:ogawa
+USER JOB:ph.D
+USER BORN:ehime
+USER AGE:99
 
 
 使用について，

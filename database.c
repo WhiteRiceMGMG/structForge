@@ -20,7 +20,7 @@
 #include <string.h>
 #include "database.h"
 
-int hundole_command(int command) {
+void hundole_command(int command) {
     static Database db = {0};
     switch (command) {
         case 1:
@@ -41,8 +41,9 @@ int hundole_command(int command) {
 }
 
 void add_user(Database* db) {
-    int index = db->userCount;
 
+    int index = db->userCount;
+    while (getchar() != '\n');
     printf("INPUT YOUR NAME:\n");
     fgets(db->userName[index], NAME_MAX, stdin);
     db->userName[index][strcspn(db->userName[index], "\n")] = '\0';
@@ -56,8 +57,8 @@ void add_user(Database* db) {
     db->userBorn[index][strcspn(db->userBorn[index], "\n")] = '\0';
 
     printf("INPUT YOUR AGE:\n");
-    while (getchar() != '\n');
     scanf("%d", &db->userAge[index]);
+
 
     db->userId[index] = index + 1;
 
