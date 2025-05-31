@@ -31,7 +31,7 @@ typedef struct {
 
 int hundole_command(int command);
 
-Database* add_user(Database* db);
+void add_user(Database* db);
 
 Database* delete_user(Database* db);
 
