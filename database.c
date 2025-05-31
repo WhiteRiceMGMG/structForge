@@ -12,7 +12,7 @@
  * 　　　　　　　　　　　・handole_command内で構造体を初期化し，各関数にポインタ渡しする．
  * Revision History:
  * 　　　　　　　　　　　2025/5/24:ファイル作成開始
- * 　　　　　　　　　　　
+ * 　　　　　　　　　　　2025/5/31:add_user関数の返り値をvoid型に
  *****************************************************************/
 
 #include <stdio.h>
@@ -42,7 +42,7 @@ int hundole_command(int command) {
     }
 }
 
-Database* add_user(Database* db) {
+void add_user(Database* db) {
     int index = db->userCount;
 
     printf("INPUT YOUR NAME:\n");
@@ -64,11 +64,22 @@ Database* add_user(Database* db) {
     db->userId[index] = index + 1;
 
     db->userCount++;
-
-    return db;
 }
 
 Database* delete_user(Database* db) {
+    int index = 0;
+    int deleteIndex = 0;
+    int i = 0;
+    printf("INPUT YOU WANNA DELETE USER ID:/n");
+    scanf("%d",&deleteIndex);
+    index = deleteIndex - 1;
+    if(index < 0 || index > db->userCount) {
+        printf("THE INDEX IS NOT EXIST...");
+    }
+    //1,2,3,4,0,6,7,8みたいになる.0のところはindex．i=indexからuserCount-1まで．
+    for()
+
+
 
 }
 
