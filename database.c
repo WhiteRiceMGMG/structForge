@@ -57,7 +57,7 @@ void add_user(Database* db) {
     db->userBorn[index][strcspn(db->userBorn[index], "\n")] = '\0';
 
     printf("INPUT YOUR AGE:\n");
-    scanf("%d", &db->userAge[index]);
+    scanf("%d", &db->userAge[index]+1);
 
 
     db->userId[index] = index + 1;
@@ -94,20 +94,21 @@ void search_user(const Database* db) {
     printf("USER JOB:%s\n",db->userJob[index]);
     printf("USER BORN:%s\n",db->userBorn[index]);
     printf("USER AGE:%d\n",db->userAge[index]);
+    printf("-------------------\n");
 
 }
 
 void print_user_list(const Database* db){
-    int index = db->userCount-1;
     int i = 0;
     printf("SHOW ALL DATA\n");
-    for(i = 0; i < index; i++) {
+    for(i = 0; i < db->userCount; i++) {
         printf("USER ID:%d\n",db->userId[i]);
         printf("USER NAME:%s\n",db->userName[i]);
         printf("USER JOB:%s\n",db->userJob[i]);
         printf("USER BORN:%s\n",db->userBorn[i]);
         printf("USER AGE:%d\n",db->userAge[i]);
+        printf("-------------------\n");
     }
- 
 }
+
 
