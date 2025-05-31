@@ -1,6 +1,9 @@
 ! 自分のメモ用です．
 いい感じ！！！！！！！！！！！！！
 
+ユーザーidを入力したら+1するようにする
+
+
 kiritanpotsu@MacBookPro structForge % ./maim.out
 -------------------
 コマンド一覧
