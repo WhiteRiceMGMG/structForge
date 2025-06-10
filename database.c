@@ -1,19 +1,16 @@
 /*****************************************************************
- *  filename   　　 : database.c
- *  escription 　　 : add, delete, and list data
- *  Author     　　 : Ogawa ocmikanmgmg@gmail.com
- *  Created    　　 : May 31, 2025
- *  Compiler   　　 : arm-none-eabi-gcc
- *  MCU        　　 : RP2040
- *  License    　　 : MIT License
- *  Note       　　 : ・main関数でコマンドナンバーを引数として受け取る
- * 　　　　　　　　　　　　　hundole_command関数が呼び出され，コマンドナンバーによって
- * 　　　　　　　　　　　　　追加や削除，一覧表示などの関数を呼び出す．
- * 　　　　　　　　　　　・handole_command内で構造体を初期化し，各関数にポインタ渡しする．
- * Revision History:
- * 　　　　　　　　　　　2025/5/24:ファイル作成開始
- * 　　　　　　　　　　　2025/5/31:add_user関数の返り値をvoid型に
- *                   2025/5/31:すべての関数を定義
+ *  filename   　 　 : harmonic.c
+ *  escription 　 　 : 
+ *  Author     　 　 : Ogawa ocmikanmgmg@gmail.com
+ *  Created    　　  : jun 1, 2025
+ *  Compiler   　　  : arm-none-eabi-gcc
+ *  MCU        　　  : RP2040
+ *  License    　　  : MIT License
+ *  Note       　　  : 
+ *  RevisionHistory  :
+ * 　　　　　　　　　　　2025/5/24:
+ * 　　　　　　　　　　　2025/5/31:
+ *                   2025/5/31:
  *****************************************************************/
 
 #include <stdio.h>
